@@ -11,19 +11,19 @@ int main(int argc, char* argv[]) {
     char buf[80];
 
 
-    if (argv < 3) { //if not 3 parameter
+    if (argc < 3) { //if not 3 parameter
         perror("main argc error");
         exit(1);
     }
 
 
-    fd1 = open(argc[1], O_RDONLY);
+    fd1 = open(argv[1], O_RDONLY);
     if (fd1 == -1) {
         perror("Error");
         exit(1);
     }
 
-    fd2 = open(argc[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
     if (fd2 == -1) {
         perror("Error");
         close(fd1);
@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
     close(fd1);
     close(fd2);
 
-    printf(" ./NewHansung.txt created!!\n");
+    printf(" %s created!!\n",argv[2]);
     return 0;
 
 }

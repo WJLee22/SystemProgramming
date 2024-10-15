@@ -5,7 +5,7 @@
 #include <stdlib.h> 
 #include <stdio.h> 
 
-int main(int argv, char* argc[]) {
+int main(int argc, char* argv[]) {
     int n;
     int fd1, fd2;
     char buf[80];

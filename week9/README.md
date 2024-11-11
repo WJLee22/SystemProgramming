@@ -21,8 +21,9 @@ ps, top, getpid(), getppid()
 
 + $ top: 실시간에 대한 프로세스 정보.   user=>누가 이 프로세스를 메인 메모리에 올렸나, PR => priority 스케줄링 우선순위 , 
 
+<br>
 
-
++ **PID(Process ID)** 는 운영체제에서 프로세스를 식별하기 위해 프로세스에 부여하는 번호.  
 + pid: 0번부터 시작.
 
   

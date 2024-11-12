@@ -59,8 +59,8 @@ switch(aID){
               printf("parent pid= %d \n", getpid());
               printf("parent ppid= %d \n", getppid());
               printf("parent child#1 aID= %d\n", aID);
-              printf("parent child#1 bID= %d\n", bID);
-              printf("parent child#1 cID= %d\n", cID);
+              printf("parent child#2 bID= %d\n", bID);
+              printf("parent child#3 cID= %d\n", cID);
               sleep(60);
               printf("\nafter 60 second !! parent process EXIT(0) \n");
               exit(0);              
